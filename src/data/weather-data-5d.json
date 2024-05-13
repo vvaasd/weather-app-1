@@ -1,0 +1,42 @@
+[
+  {
+    "time": "Вс, 07 янв.",
+    "weatherType": "./../../public/img/weather-type/day-few-clouds.svg",
+    "value": {
+      "minValue": "-17",
+      "maxValue": "-11"
+    }
+  },
+  {
+    "time": "Пн, 08 янв.",
+    "weatherType": "./../../public/img/weather-type/day-few-clouds.svg",
+    "value": {
+      "minValue": "-16",
+      "maxValue": "-8"
+    }
+  },
+  {
+    "time": "Вт, 09 янв.",
+    "weatherType": "./../../public/img/weather-type/day-few-clouds.svg",
+    "value": {
+      "minValue": "-8",
+      "maxValue": "-2"
+    }
+  },
+  {
+    "time": "Ср, 10 янв.",
+    "weatherType": "./../../public/img/weather-type/day-few-clouds.svg",
+    "value": {
+      "minValue": "-17",
+      "maxValue": "-11"
+    }
+  },
+  {
+    "time": "Чт, 11 янв.",
+    "weatherType": "./../../public/img/weather-type/day-few-clouds.svg",
+    "value": {
+      "minValue": "-17",
+      "maxValue": "-11"
+    }
+  }
+]

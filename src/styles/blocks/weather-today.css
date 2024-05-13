@@ -1,0 +1,134 @@
+.weather-today {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  text-align: center;
+  padding-block: 0.5rem;
+}
+
+.weather-today-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  padding-inline: 0.5rem;
+
+  font-size: 1.25rem;
+  line-height: 120%;
+  color: var(--light-color);
+}
+
+.weather-today__region {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 133%;
+  color: var(--light-color);
+
+  margin: 0;
+}
+
+.weather-today__temperature {
+  font-weight: 700;
+  font-size: 7rem;
+
+  text-align: center;
+  color: var(--light-color);
+
+  margin: 0;
+}
+
+.weather-today__temperature::after {
+  content: '°';
+}
+
+.weather-today__date {
+  margin: 0;
+}
+
+.weather-today__time {
+  margin: 0;
+}
+
+.weather-today__weather-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.weather-today__weather-type-img {
+  margin: 0;
+}
+
+.weather-today__weather-type-text {
+  margin: 0;
+}
+
+.weather-today__weather-feels {
+  margin: 0;
+}
+
+@media (max-width: 886px) {
+  .weather-today {
+    padding-block: 0;
+    gap: 1.5rem;
+  }
+
+  .weather-today-block {
+    gap: 0.375rem;
+  }
+
+  .weather-today__temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+  }
+
+  .weather-today__weather-type {
+    gap: 0.375rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .weather-today {
+    gap: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+  }
+
+  .weather-today-block {
+    gap: clamp(0.25rem, -0.375rem + 1.56vw, 0.375rem);
+  }
+
+  .weather-today__region {
+    font-size: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+    line-height: clamp(1.25rem, -2.475rem + 9.31vw, 1.995rem);
+  }
+
+  .weather-today__date,
+  .weather-today__time,
+  .weather-today__weather-type-text,
+  .weather-today__weather-feels {
+    font-size: clamp(0.875rem, -1rem + 4.69vw, 1.25rem);
+    height: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+
+    line-height: clamp(0.995rem, -1.53rem + 6.31vw, 1.5rem);
+  }
+
+  .weather-today__weather-type {
+    gap: clamp(0.25rem, -0.375rem + 1.56vw, 0.375rem);
+  }
+
+  .weather-today__weather-type-img {
+    width: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+    height: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+  }
+
+  .weather-today__temperature {
+    font-size: clamp(3.5rem, -14rem + 43.75vw, 7rem);
+  }
+}
+
+@media (max-width: 640px) {
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="icon" type="image/svg" href="./favicon.svg" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <script src="./src/js/header-search.js" defer></script>
+    <script type="module" src="./src/js/details-cards.js"></script>
+    <script type="module" src="./src/js/forecast-slider.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo-wrap">
+          <img src="./public/img/logo.svg" alt="logo" class="header__logo" />
+          <img
+            src="./public/img/logo-mini.svg"
+            alt="logo"
+            class="header__logo-mini"
+          />
+        </div>
+
+        <div class="header__search">
+          <form action="#!" class="search-form" id="id-header-search-form">
+            <input
+              id="id-header-search-input"
+              placeholder="Поиск по городу"
+              type="text"
+              autocomplete="off"
+              class="search-form__input"
+            />
+            <button
+              class="search-form__btn"
+              type="submit"
+              id="id-header-search-btn"
+            >
+              <img
+                src="./public/img/icons/search-icon.svg"
+                alt="search"
+                id="id-header-search-icon"
+                class="search-form__btn-icon"
+              />
+            </button>
+            <button
+              class="search-form__btn none"
+              type="reset"
+              id="id-header-search-btn-close"
+            >
+              <img src="./public/img/icons/close-icon.svg" alt="search" />
+            </button>
+          </form>
+        </div>
+      </header>
+
+      <main class="weather">
+        <section class="weather-today">
+          <div class="weather-today-block">
+            <p class="weather-today__region">Москва</p>
+            <p class="weather-today__date">Суббота, 06 января</p>
+            <p class="weather-today__time">11:29</p>
+          </div>
+
+          <div class="weather-today-block">
+            <p class="weather-today__temperature">-7</p>
+          </div>
+
+          <div class="weather-today-block">
+            <div class="weather-today__weather-type">
+              <img
+                src="./public/img/weather-type/day-cloudy.svg"
+                alt="weather-type"
+                class="weather-today__weather-type-img"
+              />
+              <p class="weather-today__weather-type-text">Облачно</p>
+            </div>
+            <p class="weather-today__weather-feels">Ощущается как -11°</p>
+          </div>
+        </section>
+
+        <section class="weather-details">
+          <div class="weather-details-cards-wrap">
+            <ul class="weather-details-cards" id="id-weather-details-cards">
+              <li class="weather-details-card" id="card-humidity">
+                <h3 class="weather-details-card__header">Влажность</h3>
+                <img
+                  class="weather-details-card__icon"
+                  src="./public/img/card-icons/humidity-icon.svg"
+                  alt="humidity-icon"
+                />
+                <p class="weather-details-card__degree">-</p>
+                <div class="weather-details-card__visual-degree">
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="50"
+                    class="weather-details-card__visual-degree-bar"
+                    disabled
+                  />
+                  <div
+                    class="weather-details-card__visual-degree-bar-ellipse"
+                  ></div>
+                  <div class="weather-details-card__visual-degree-values">
+                    <p class="weather-details-card__visual-degree-values-min">
+                      0%
+                    </p>
+                    <p class="weather-details-card__visual-degree-values-max">
+                      100%
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="weather-details-card" id="card-pressure">
+                <h3 class="weather-details-card__header">Давление</h3>
+                <img
+                  class="weather-details-card__icon"
+                  src="./public/img/card-icons/pressure-icon.svg"
+                  alt="pressure-icon"
+                />
+                <p class="weather-details-card__degree">-</p>
+                <div class="weather-details-card__visual-degree">
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="50"
+                    class="weather-details-card__visual-degree-bar weather-details-card__visual-degree-bar--pressure"
+                    disabled
+                  />
+                  <div
+                    class="weather-details-card__visual-degree-bar-ellipse"
+                  ></div>
+                  <div class="weather-details-card__visual-degree-values">
+                    <p
+                      class="weather-details-card__visual-degree-values-comment"
+                    >
+                      Повышенное
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="weather-details-card" id="card-visibility">
+                <h3 class="weather-details-card__header">Видимость</h3>
+                <img
+                  src="./public/img/card-icons/visibility-icon.svg"
+                  alt="visbility-icon"
+                  class="weather-details-card__icon"
+                />
+                <p class="weather-details-card__degree">-</p>
+                <div class="weather-details-card__visual-degree">
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="50"
+                    class="weather-details-card__visual-degree-bar"
+                    disabled
+                  />
+                  <div
+                    class="weather-details-card__visual-degree-bar-ellipse"
+                  ></div>
+                  <div class="weather-details-card__visual-degree-values">
+                    <p
+                      class="weather-details-card__visual-degree-values-comment"
+                    >
+                      Нормальная
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="weather-details-card" id="card-sunrise">
+                <h3 class="weather-details-card__header">Рассвет</h3>
+                <img
+                  src="./public/img/card-icons/sunrise-icon.svg"
+                  alt="sunrise-icon"
+                  class="weather-details-card__icon"
+                />
+                <p class="weather-details-card__degree">-</p>
+                <div class="weather-details-card__visual-degree-values">
+                  <p class="weather-details-card__visual-degree-values-comment">
+                    Прошло: 02:47
+                  </p>
+                </div>
+              </li>
+              <li class="weather-details-card" id="card-sunset">
+                <h3 class="weather-details-card__header">Закат</h3>
+                <img
+                  src="./public/img/card-icons/sunset-icon.svg"
+                  alt="sunset-icon"
+                  class="weather-details-card__icon"
+                />
+                <p class="weather-details-card__degree">-</p>
+                <div class="weather-details-card__visual-degree-values">
+                  <p class="weather-details-card__visual-degree-values-comment">
+                    Осталось: 05:08
+                  </p>
+                </div>
+              </li>
+              <li class="weather-details-card" id="card-wind">
+                <h3 class="weather-details-card__header">Сила ветра</h3>
+                <img
+                  src="./public/img/card-icons/wind-icon.svg"
+                  alt="wind-icon"
+                  class="weather-details-card__icon"
+                />
+                <p class="weather-details-card__degree">-</p>
+                <div class="weather-details-card__visual-degree-values">
+                  <p class="weather-details-card__visual-degree-values-comment">
+                    Северо-западный
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <section class="forecast-slider">
+        <div class="forecast-slider__selection">
+          <h3 class="forecast-slider__selection-title">Прогноз:</h3>
+          <div
+            class="forecast-slider__selection-btn-wrap"
+            id="id-forecast-slider__selection-btn-wrap-24h"
+          >
+            <button
+              class="forecast-slider__selection-btn forecast-slider__selection-btn--active"
+            >
+              на 24 часа
+            </button>
+          </div>
+          <div
+            class="forecast-slider__selection-btn-wrap"
+            id="id-forecast-slider__selection-btn-wrap-5d"
+          >
+            <button class="forecast-slider__selection-btn">на 5 дней</button>
+          </div>
+        </div>
+
+        <div class="sliders">
+          <button
+            class="slider__move-btn slider__move-btn--left slider__move-btn--inactive"
+          ></button>
+          <button class="slider__move-btn slider__move-btn--right"></button>
+          <div class="slider">
+            <ul class="slider__cards" id="id-slider__cards-24h"></ul>
+            <ul class="slider__cards none" id="id-slider__cards-5d"></ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-info">
+          <p class="footer__copyright">
+            Проект
+            <a
+              href="https://github.com/vvaasd/weather-app-1"
+              class="footer__copyright-link"
+              target="_blank"
+              >WeatherApp</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

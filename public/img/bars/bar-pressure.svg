@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg  viewBox="0 0 126 8" width="126px" height="8px" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <radialGradient id="pressureGradint" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(63 3.99995) scale(58 756.25)">
+  <stop stop-color="#545454" stop-opacity="0.4"/>
+  <stop offset="0.5" stop-color="#8A8A8A" stop-opacity="0.4"/>
+  <stop offset="1" stop-color="#fff" />
+  <stop offset="1" stop-color="#fff" stop-opacity="1"/>
+  </radialGradient>
+</defs>
+  <rect style="fill: url(#pressureGradint); stroke: rgb(218, 218, 218); stroke-opacity: 0.4; stroke-width: 0px; transform-box: fill-box; transform-origin: 50% 50%;" x="0" y="0" width="126" height="8" rx="4" ry="4"/>
+</svg>

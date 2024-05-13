@@ -1,0 +1,34 @@
+.footer {
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__copyright {
+  font-size: 1rem;
+  line-height: 125%;
+  color: var(--light-color);
+
+  text-align: center;
+
+  margin: 0;
+}
+.footer__copyright-link {
+  color: var(--light-color);
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    height: 68px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: clamp(3rem, -3.25rem + 15.63vw, 4.25rem);
+  }
+  .footer__copyright {
+    font-size: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+  }
+}

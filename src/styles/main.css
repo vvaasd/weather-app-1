@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import './normalize.css';
+@import './vars.css';
+
+@import './blocks/base.css';
+@import './blocks/header.css';
+@import './blocks/weather.css';
+@import './blocks/weather-today.css';
+@import './blocks/weather-details.css';
+@import './blocks/slider.css';
+@import './blocks/footer.css';
