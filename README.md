@@ -5,7 +5,7 @@ deployed [here, on netify](https://vvaasd-weather-app-1.netlify.app) (data isn't
 Stack: HTML, CSS, JS
 
 - Basic operations with DOM
-- Work with data (API imitation)
+- Work with mock data (API imitation)
 - BEM metodology
 - Responsive Pixel Perfect layout (clamp() & media queries)
 - CSS-variables
