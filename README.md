@@ -11,3 +11,7 @@ Stack: HTML5, CSS, JS
 - CSS-variables
 
 Within this project, trying to simulate real conditions, I completed technical tasks assigned to me and pushed them to remote repository (GitLab).
+
+How to run dev mode:
+- clone repository
+- to run you can use vscode plugin Live Server
